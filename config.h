@@ -65,11 +65,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "   [  %s% ]   ", "pamixer --get-volume | awk {'print $1'}" },
+	{ run_command, " [  %s% ]  ", "pamixer --get-volume | awk {'print $1'}" },
 	// { netspeed_rx,"[  %sB/s ]   ", "wlp7s0"},
 	// { netspeed_tx,"[ 祝 %sB/s ]   ", 	 "wlp7s0"}, 
-	{ cpu_perc, "[   %s% ]   ", 	 NULL},
-	{ ram_perc, "[   %s%, ",  NULL},
-	{ ram_used, "%sB ]   ",      NULL },
-	{ datetime, "%s",  "[   %a, %d %b, %Y ]   [   %r ]   "},
+	{ cpu_perc, "[  %s%  ]  ", 	 NULL},
+	{ ram_perc, "[  %s%, ",  NULL},
+	{ ram_used, "%sB ]  ",      NULL },
+	{ datetime, "%s",  "[  %a, %d %b, %Y ]  [  %r ] "},
 };
